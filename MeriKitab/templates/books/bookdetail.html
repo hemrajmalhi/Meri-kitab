@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+{% block title %}MeriKitab - Buy Books {% endblock title %}
+{% load static %}
+{% block body %}
+
+<div class="flex p-4 space-x-4">
+    <div class="w-1/4">
+      <img src="/media/{{bookDetail.image1}}" alt="Book Image" class="max-w-full h-auto">
+    </div>
+    <div class="w-3/4  m-4">
+      <h2 class="text-2xl font-bold">BookTite : {{bookDetail.title}}</h2>
+      <p class="text-gray-600">Author: {{bookDetail.authorName}}</p>
+      <p class="text-gray-600">Category: {{category_name.category}}</p>
+      <p class="text-gray-600">Price: {{bookDetail.setprice}}</p>
+      <p class="text-gray-600">Description: {{bookDetail.desc}}</p>
+      <p class="text-gray-600">Seller Name: {{bookDetail.name}}</p>
+      <!-- <p class="text-gray-600">Email: {{bookDetail.}}</p> -->
+      <p class="text-gray-600">Contact No: {{bookDetail.phone}}</p>
+      <p class="text-gray-600">Address: {{bookDetail.address}}</p>
+    </div>
+  </div>
+  
+
+
+
+{% endblock body %}
+
+
+
+
+
