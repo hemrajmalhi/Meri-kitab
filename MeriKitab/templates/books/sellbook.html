@@ -9,8 +9,8 @@
   <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
   </svg>
-  <span class="sr-only">Info</span>
-  <div class="ml-3 text-sm font-medium">
+  <span class="sr-only" style="font-family: poppins;">Info</span>
+  <div class="ml-3 text-sm font-medium"  style="font-family: poppins;">
     <!-- A simple info alert with an <a href="#" class="font-semibold underline hover:no-underline">example link</a>. Give it a click if you like. -->
     Success! Your data has been submitted Succesfully.
   </div>
@@ -24,7 +24,7 @@
 
 {% endif %}
 
-<h1 style="text-align: center; font-weight: 700; font-size: 1.5rem; margin-top: 4px;">POST YOUR BOOK</h1>
+<h1 style="text-align: center; font-weight: 700; font-size: 1.5rem; margin-top: 4px;"  style="font-family: poppins;">POST YOUR BOOK</h1>
 <hr>
 <hr>
 
@@ -33,30 +33,30 @@
 <div class="max-w-screen-lg mx-auto px-4 font-sans">
 
   
- <h1 class="mt-4  mb-4 font-bold" style="font-size: 1.6rem;">INCLUDE SOME DETAILS</h1>
+ <h1 class="mt-4  mb-4 font-bold" style="font-size: 1.6rem;"  style="font-family: poppins;">INCLUDE SOME DETAILS</h1>
   <hr>
   <hr>
   <form action="/sellbook/" method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="mb-6 mt-4">
-      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ADD TITLE</label>
+      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">ADD TITLE</label>
       <input type="text" id="title" name="title"
-        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light font-serif"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light  "
         placeholder="Operating System" required>
     </div>
 
     <div class="mb-6">
-      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DESCRIPATION</label>
+      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">DESCRIPATION</label>
       <textarea id="message" rows="4" name="desc"
-        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 font-serif"
+        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500  "
         placeholder="Leave a comment..."></textarea>
     </div>
 
     <div class="mb-6">
-      <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CATEGORY</label>
-      <select id="category" name="category"
-        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light font-serif"
-        required>
+      <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">CATEGORY</label>
+      <select id="category" name="category"  style="font-family: poppins;"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light  "
+        required >
         <option value="0">Select Category</option>
         <option value="1">Fiction</option>
         <option value="2">Non-Fiction</option>
@@ -67,21 +67,21 @@
     </div>
 
     <div class="mb-6">
-      <label for="setprice" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Author Name</label>
+      <label for="setprice" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">Author Name</label>
       <input type="text" id="title" name="authorName"
-      class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light font-serif"
+      class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light  "
       placeholder="william stallings" required>
     </div>
 
 
     <div class="mb-6">
-      <label for="setprice" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SET PRICE</label>
+      <label for="setprice" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">SET PRICE</label>
       <div class="relative">
         <input type="number" id="price" name="setprice"
           class="pl-8 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 pr-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light"
           max="1000" min="0" maxlength="4" required>
         <div  
-          class="absolute inset-y-0 left-0 flex items-center pr-1 text-gray-600 dark:text-white rounded-lg font-serif bg-purple-100">
+          class="absolute inset-y-0 left-0 flex items-center pr-1 text-gray-600 dark:text-white rounded-lg   bg-purple-100">
           Rs : </div>
       </div>    
     </div>  
@@ -91,7 +91,7 @@
     <!-- ADD IMAGES -->
 
     <div class="mb-6 mt-4">
-      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ADD BOOK IMAGES</label>
+      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">ADD BOOK IMAGES</label>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
         <!-- Photo 1 -->
         <div class="relative">
@@ -107,7 +107,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M20 4h-1l-1-1h-6l-1 1H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"></path>
             </svg>
-            <span class="text-purple-700">Upload Photo</span>
+            <span class="text-purple-700"  style="font-family: poppins;">Upload Photo</span>
             <img src="#" alt="Image Preview" id="photo1Preview"
               style="display: none; max-width: 100%; max-height: 100%;">
           </label>
@@ -119,7 +119,7 @@
             class="relative border border-black h-28 w-28 rounded-lg flex flex-col justify-center items-center cursor-pointer hover:border-purple-100 transition duration-300 ease-in-out">
             <input type="file"  name="image2" id="photo2" class="hidden" accept="image/*">
             <svg class="w-8 h-8 text-purple-700 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"  style="font-family: poppins;">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6a2 2 0 100-4 2 2 0 000 4z">
               </path>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14s-6 0-6 6"></path>
@@ -127,7 +127,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M20 4h-1l-1-1h-6l-1 1H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"></path>
             </svg>
-            <span class="text-purple-700">Upload Photo</span>
+            <span class="text-purple-700"  style="font-family: poppins;">Upload Photo</span>
             <img src="#" alt="Image Preview" id="photo2Preview"
               style="display: none; max-width: 100%; max-height: 100%;">
           </label>
@@ -147,7 +147,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M20 4h-1l-1-1h-6l-1 1H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"></path>
             </svg>
-            <span class="text-purple-700">Upload Photo</span>
+            <span class="text-purple-700"  style="font-family: poppins;">Upload Photo</span>
             <img src="#" alt="Image Preview" id="photo3Preview"
               style="display: none; max-width: 100%; max-height: 100%;">
           </label>
@@ -166,7 +166,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M20 4h-1l-1-1h-6l-1 1H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"></path>
             </svg>
-            <span class="text-purple-700">Upload Photo</span>
+            <span class="text-purple-700"  style="font-family: poppins;">Upload Photo</span>
             <img src="#" alt="Image Preview" id="photo4Preview"
               style="display: none; max-width: 100%; max-height: 100%;">
           </label>
@@ -179,33 +179,33 @@
 
     <hr>
     <hr>
-    <h1 class="mt-4  mb-4 font-bold" style="font-size: 1.6rem;">SELLER DETAILS</h1>
+    <h1 class="mt-4  mb-4 font-bold" style="font-size: 1.6rem;" style="font-family: poppins;">SELLER DETAILS</h1>
     <hr>
     <hr>
     <div class="mb-6 mt-4">
-      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NAME</label>
+      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">NAME</label>
       <input type="text" id="name" name="name"
-        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light font-serif"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light  "
         placeholder="e:g Aijaz" required>
     </div>
 
     <div class="mb-6">
-      <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">PHONE NO:</label>
+      <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">PHONE NO:</label>
       <div class="relative">
         <input type="text" id="phone"  name="phone"
           class="pl-8 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 pr-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light"
           maxlength="10" required>
         <div
-          class="absolute inset-y-0 left-0 flex items-center pr-1 text-gray-600 dark:text-white rounded-lg font-serif bg-purple-100">
+          class="absolute inset-y-0 left-0 flex items-center pr-1 text-gray-600 dark:text-white rounded-lg   bg-purple-100"  style="font-family: poppins;">
           +92 </div>
       </div>
     </div>
 
 
     <div class="mb-6 mt-4">
-      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ADDRESS</label>
+      <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"  style="font-family: poppins;">ADDRESS</label>
       <input type="text" id="address" name="address"
-        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light font-serif"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500 dark:shadow-sm-light  "
         placeholder="e:g Naseem Nager Hyderabad" required>
     </div>
 
