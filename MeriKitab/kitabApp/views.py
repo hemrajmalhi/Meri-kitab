@@ -52,8 +52,5 @@ def bookDetail(request, pk):
     category_id = bookDetails.category
     category_name = bookDetails.category
     category_name = category_mapping.get(category_id)
-    print(f"Provided category_id: {category_id}")
-    print(f"Category mapping: {category_mapping}")
-    print(f"Resolved category_name: {category_name}")
     context = {'bookDetail': bookDetails, 'category_name': category_name}
     return render(request, "books/bookdetail.html", context)
