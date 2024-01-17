@@ -124,10 +124,10 @@
               </svg></li> -->
           </ul>
           <div class="text-center my-2 pr-4 pl-2">
-            <a href="/account">
+            <a href="{% url 'logout' %}">
               <button
                 class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 dark:bg-purple-500 dark:hover:bg-purple-800">Login</button></a>
-            <a href="/account/signup">
+            <a href="{% url 'signup' %}">
               <button
                 class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 dark:bg-purple-500 dark:hover:bg-purple-800">Signup
               </button>
