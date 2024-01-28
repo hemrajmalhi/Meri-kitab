@@ -8,15 +8,17 @@
       <img src="/media/{{bookDetail.image1}}" alt="Book Image" class="max-w-full h-auto">
     </div>
     <div class="w-3/4  m-4">
-      <h2 class="text-2xl font-bold">BookTite : {{bookDetail.title}}</h2>
-      <p class="text-gray-600">Author: {{bookDetail.authorName}}</p>
-      <p class="text-gray-600">Category: {{category_name.category}}</p>
-      <p class="text-gray-600">Price: {{bookDetail.setprice}}</p>
-      <p class="text-gray-600">Description: {{bookDetail.desc}}</p>
-      <p class="text-gray-600">Seller Name: {{bookDetail.name}}</p>
+      <h2 class="text-2xl font-bold uppercase" style=" padding: 4px 4px; background-color: #92d492; width: 60%;"><b>BookTite :</b> {{bookDetail.title}}</h2>
+      <p style="width: 60%; text-align: justify;"><b>Description: </b> {{bookDetail.desc}}</p>
+      <p ><b>Author: </b> {{bookDetail.authorName}}</p>
+      <!-- <p class="text-gray-600"><b> category</b> {{category_name.category}}</p> -->
+      <p ><b>Price: </b> {{bookDetail.setprice}}</p>
+
+      <h1 class="mt-5 uppercase" style="font-weight: 600;  font-weight: 900; width: 60%; font-size: 28px;padding: 4px 4px; background-color: #92d492;" > About Seller</h1>
+      <p><b>Seller Name: </b> {{bookDetail.name}}</p>
       <!-- <p class="text-gray-600">Email: {{bookDetail.}}</p> -->
-      <p class="text-gray-600">Contact No: {{bookDetail.phone}}</p>
-      <p class="text-gray-600">Address: {{bookDetail.address}}</p>
+      <p> <b>Contact No: </b> {{bookDetail.phone}}</p>
+      <p><b>Address: </b> {{bookDetail.address}}</p>
     </div>
   </div>
   

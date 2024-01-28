@@ -8,7 +8,12 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
+  {% load static %}
   <title>{% block title %}{% endblock title %}</title>
 </head>
 
@@ -16,9 +21,9 @@
 
   <div class="">
     <div class="" style="position:fixed;top:0;left:0;height:2px;background:transparent;z-index:99999999999;width:100%">
-      <div class="" style="height:100%;background:purple;transition:all 500ms ease;width:0%">
+      <div class="" style="height:100%;background:green;transition:all 500ms ease;width:0%">
         <div
-          style="box-shadow: purple 0px 0px 10px, purple 0px 0px 5px; width: 5%; opacity: 1; position: absolute; height: 100%; transition: all 500ms ease 0s; transform: rotate(3deg) translate(0px, -4px); left: -10rem;">
+          style="box-shadow: green 0px 0px 10px, green 0px 0px 5px; width: 5%; opacity: 1; position: absolute; height: 100%; transition: all 500ms ease 0s; transform: rotate(3deg) translate(0px, -4px); left: -10rem;">
         </div>
       </div>
     </div>
@@ -27,12 +32,13 @@
       class="w-full z-10 sticky bg-white top-0 border-b border-grey-light shadow-md dark:bg-gray-800 dark:border-black">
       <div class="w-full flex flex-wrap items-center lg:justify-between mt-0 py-4 font-serif ">
         <div
-          class="px-0 lg:pl-4 flex items-center lg:mx-4 cursor-pointer text-purple-700 text-xl font-bold mx-3 dark:text-purple-300 " style="color: #278c44; font-family: poppins;">
+          class="px-0 lg:pl-4 flex items-center lg:mx-4 cursor-pointer text-green-700 text-xl font-bold mx-3 dark:text-green-300 "
+          style="color: #278c44; font-family: poppins;">
           <a href="/">Merikitab</a>
         </div>
         <!-- <div class="flex items-center md:hidden">
-          <div class="text-purple-700 text-md font-semibold">Menu</div><svg stroke="currentColor" fill="currentColor"
-            stroke-width="0" viewBox="0 0 1024 1024" class="text-purple-700 mt-1" height="1em" width="1em"
+          <div class="text-green-700 text-md font-semibold">Menu</div><svg stroke="currentColor" fill="currentColor"
+            stroke-width="0" viewBox="0 0 1024 1024" class="text-green-700 mt-1" height="1em" width="1em"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
@@ -41,7 +47,7 @@
         </div> -->
         <!-- drak and light theme -->
         <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-          class="md:hidden text-purple-700 mt-1 ml-2 cursor-pointer dark:text-white" height="28" width="28"
+          class="md:hidden text-green-700 mt-1 ml-2 cursor-pointer dark:text-white" height="28" width="28"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
@@ -50,22 +56,23 @@
             d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
           </path>
         </svg> -->
-<!-- 
+        <!-- 
         <button
-          class="md:hidden text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 absolute right-3 md:right-12" style="padding-left: 32px; padding-right: 32px; border-radius: 200px;">Login</button> -->
+          class="md:hidden text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 absolute right-3 md:right-12" style="padding-left: 32px; padding-right: 32px; border-radius: 200px;">Login</button> -->
 
         <div
           class="w-full flex-grow lg:flex lg:flex-1 lg:content-center lg:justify-end lg:w-auto h-0 lg:h-auto overflow-hidden mt-2 lg:mt-0 z-20 transition-all"
           id="nav-content">
           <ul class="flex items-center flex-col lg:flex-row" style="font-family: poppins;">
-            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/">Home</a></li>
-            <!-- <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <!-- <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/tutorial/">Category</a></li> -->
 
             <li>
               <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" style="font-family: poppins;">Category
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                style="font-family: poppins;">Category
                 <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -77,43 +84,44 @@
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
                     <a href="#"
-                      class="block px-4 py-2 hover:bg-purple-200 dark:hover:bg-gray-600 dark:hover:text-white">Fiction</a>
+                      class="block px-4 py-2 hover:bg-green-200 dark:hover:bg-gray-600 dark:hover:text-white">Fiction</a>
                   </li>
                   <li>
                     <a href="#"
-                      class="block px-4 py-2 hover:bg-purple-200 dark:hover:bg-gray-600 dark:hover:text-white">Non-Fiction</a>
+                      class="block px-4 py-2 hover:bg-green-200 dark:hover:bg-gray-600 dark:hover:text-white">Non-Fiction</a>
                   </li>
                   <li>
                     <a href="#"
-                      class="block px-4 py-2 hover:bg-purple-200 dark:hover:bg-gray-600 dark:hover:text-white">Science</a>
+                      class="block px-4 py-2 hover:bg-green-200 dark:hover:bg-gray-600 dark:hover:text-white">Science</a>
                   </li>
                   <li>
                     <a href="#"
-                      class="block px-4 py-2 hover:bg-purple-200 dark:hover:bg-gray-600 dark:hover:text-white">Children Book</a>
+                      class="block px-4 py-2 hover:bg-green-200 dark:hover:bg-gray-600 dark:hover:text-white">Children
+                      Book</a>
                   </li>
                   <li>
                     <a href="#"
-                      class="block px-4 py-2 hover:bg-purple-200 dark:hover:bg-gray-600 dark:hover:text-white">Reference</a>
+                      class="block px-4 py-2 hover:bg-green-200 dark:hover:bg-gray-600 dark:hover:text-white">Reference</a>
                   </li>
                 </ul>
               </div>
             </li>
 
 
-            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/buybook/">Buy Books</a></li>
-            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/sellbook/">Sell Books</a></li>
-            <!-- <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <!-- <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/blog/">Blog</a></li> -->
-            <!-- <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <!-- <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/course/notes">Notes</a></li>  -->
-            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/about/">About Us</a></li>
-            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+            <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-green-700 dark:text-white"><a
                 href="/contact/">Contact</a></li>
             <!-- <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                class="hidden md:block text-purple-700 mt-1 ml-2 cursor-pointer dark:text-white" height="28" width="28"
+                class="hidden md:block text-green-700 mt-1 ml-2 cursor-pointer dark:text-white" height="28" width="28"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
@@ -126,10 +134,12 @@
           <div class="text-center my-2 pr-4 pl-2">
             <a href="{% url 'logout' %}">
               <button
-                class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 dark:bg-purple-500 dark:hover:bg-purple-800"  style="padding-left: 32px; padding-right: 32px; border-radius: 200px; font-family: poppins;">Login</button></a>
+                class="text-white  focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 dark:bg-green-500 dark:hover:bg-green-800"
+                style="padding-left: 32px; padding-right: 32px; border-radius: 200px; font-family: poppins; background-color: #278c44;">Login</button></a>
             <a href="{% url 'signup' %}">
               <button
-                class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 dark:bg-purple-500 dark:hover:bg-purple-800"  style="padding-left: 32px; padding-right: 32px; border-radius: 200px; font-family: poppins;">Signup
+                class="text-white focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 dark:bg-green-500 dark:hover:bg-green-800"
+                style="padding-left: 32px; padding-right: 32px; border-radius: 200px; font-family: poppins;background-color: #278c44;">Signup
               </button>
             </a>
           </div>
@@ -139,34 +149,34 @@
       <!-- <div class="max-h-[6vh] min-h-[40px] flex items-center ml-3 mr-3 md:ml-10 md:mr-10 my-1">
         <span>
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-            class="text-purple-700 text-xl cursor-pointer dark:text-purple-300" height="1em" width="1em"
+            class="text-green-700 text-xl cursor-pointer dark:text-green-300" height="1em" width="1em"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z">
             </path>
           </svg></span>
-        <ul class="space-x-7 m-auto text-purple-700 font-semibold hidden md:flex items-center font-serif">
-          <li class="cursor-pointer hover:border-b-2 hover:border-purple-700 active:border-b-4 dark:text-purple-300">
+        <ul class="space-x-7 m-auto text-green-700 font-semibold hidden md:flex items-center font-serif">
+          <li class="cursor-pointer hover:border-b-2 hover:border-green-700 active:border-b-4 dark:text-green-300">
             <a href="/tutorial/biology/">Fiction</a>
           </li>
-          <li class="cursor-pointer hover:border-b-2 hover:border-purple-700 active:border-b-4 dark:text-purple-300">
+          <li class="cursor-pointer hover:border-b-2 hover:border-green-700 active:border-b-4 dark:text-green-300">
             <a href="/tutorial/chemistry/">Non Fiction</a>
           </li>
-          <li class="cursor-pointer hover:border-b-2 hover:border-purple-700 active:border-b-4 dark:text-purple-300">
+          <li class="cursor-pointer hover:border-b-2 hover:border-green-700 active:border-b-4 dark:text-green-300">
             <a href="/tutorial/english/">Children's Book</a>
           </li>
-          <li class="cursor-pointer hover:border-b-2 hover:border-purple-700 active:border-b-4 dark:text-purple-300">
+          <li class="cursor-pointer hover:border-b-2 hover:border-green-700 active:border-b-4 dark:text-green-300">
             <a href="/tutorial/math/">Science</a>
           </li>
-          <li class="cursor-pointer hover:border-b-2 hover:border-purple-700 active:border-b-4 dark:text-purple-300">
+          <li class="cursor-pointer hover:border-b-2 hover:border-green-700 active:border-b-4 dark:text-green-300">
             <a href="/tutorial/physics/">Reference</a>
           </li>
         </ul>
         <input id="search"
-          class="hidden right-10 md:right-10 absolute w-48 md:w-60 h-8 bg-white rounded border-2 border-purple-500 focus:border-purple-700 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out dark:bg-gray-500 dark:text-gray-200"
+          class="hidden right-10 md:right-10 absolute w-48 md:w-60 h-8 bg-white rounded border-2 border-green-500 focus:border-green-700 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out dark:bg-gray-500 dark:text-gray-200"
           placeholder="Search">
         <svg id="search-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-          class="text-purple-700 dark:text-purple-300 cursor-pointer text-2xl absolute right-3 md:right-12" height="1em"
+          class="text-green-700 dark:text-green-300 cursor-pointer text-2xl absolute right-3 md:right-12" height="1em"
           width="1em" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
@@ -174,11 +184,11 @@
         </svg>
       </div> -->
 
-      <div class="bg-purple-100 text-center shadow-lg absolute w-full dark:bg-gray-600 hidden mt-1 md:hidden">
+      <div class="bg-green-100 text-center shadow-lg absolute w-full dark:bg-gray-600 hidden mt-1 md:hidden">
         <ul>
-          <li class="pt-4 text-purple-500 font-bold"><a href="/">Home</a></li>
-          <li class="pt-4 text-purple-500 font-bold"><a href="/course/">Courses</a></li>
-          <li class="pt-4 text-purple-500 font-bold flex justify-center ml-3">Category
+          <li class="pt-4 text-green-500 font-bold"><a href="/">Home</a></li>
+          <li class="pt-4 text-green-500 font-bold"><a href="/course/">Courses</a></li>
+          <li class="pt-4 text-green-500 font-bold flex justify-center ml-3">Category
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="mt-1"
               height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -186,7 +196,7 @@
               </path>
             </svg>
           </li>
-          <li class="my-2 text-purple-500 font-semibold text-sm bg-purple-200 dark:bg-gray-700  hidden">
+          <li class="my-2 text-green-500 font-semibold text-sm bg-green-200 dark:bg-gray-700  hidden">
             <ul>
               <li class="cursor-pointer py-1 border-y-2 dark:border-gray-400"><a href="/tutorial/biology/">Fiction</a>
               </li>
@@ -201,51 +211,141 @@
               </li>
             </ul>
           </li>
-          <li class="pt-4 text-purple-500 font-bold"><a href="/blog/">Buy Book</a></li>
-          <li class="pt-4 text-purple-500 font-bold"><a href="sellbook/">Sell Book</a></li>
-          <li class="pt-4 text-purple-500 font-bold"><a href="/contact/">Contact</a></li>
-          <li class="pt-4 text-purple-500 font-bold"><a href="/about/">About Us</a></li>
-          <!-- <li class="pt-4 pb-4 text-purple-500 font-bold"><a href=/join/">Join Us</a></li> -->
+          <li class="pt-4 text-green-500 font-bold"><a href="/blog/">Buy Book</a></li>
+          <li class="pt-4 text-green-500 font-bold"><a href="sellbook/">Sell Book</a></li>
+          <li class="pt-4 text-green-500 font-bold"><a href="/contact/">Contact</a></li>
+          <li class="pt-4 text-green-500 font-bold"><a href="/about/">About Us</a></li>
+          <!-- <li class="pt-4 pb-4 text-green-500 font-bold"><a href=/join/">Join Us</a></li> -->
         </ul>
       </div>
     </div>
     {% block body %}{% endblock body %}
 
-    <hr class="dark:border-purple-300">
-    <footer class="text-gray-600 bg-white body-font dark:bg-gray-800 dark:text-white ">
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <div
-          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 dark:text-gray-200">
 
-          <div class="ml-3 text-xl font-serif font-bold text-purple-700">MeriKitab</div>
+    <!-- <div class="md:block hidden w-1/2">
+      <img class="rounded-2xl" src='{% static "/account/footer.jpg" %}'>
+    </div -->
+    
+    >
+    <hr>
+    <hr>
+    <footer class="dark:bg-green-900" style="background-color: #278c44; opacity: 90%;">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="/" class="flex items-center">
+              <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" /> -->
+              <span class="self-center text-2xl font-bold whitespace-nowrap "
+                style="color: white; animation: fadeIn 1.5s ease-in-out;">MeriKitab</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-bold uppercase text-white">Quick Links</h2>
+              <ul class="text-white dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="/" class="hover:text-black">HOME</a>
+                </li>
+
+                <!-- <li class="mb-4">
+                        <a href="https://tailwindcss.com/" class="hover:text-black">Buy Book</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://tailwindcss.com/" class="hover:text-black">Sell Book</a>
+                    </li> -->
+                <li class="mb-4">
+                  <a href="https://tailwindcss.com/" class="hover:text-black">About Us</a>
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/" class="hover:text-black">Contact Us</a>
+                </li>
+
+
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-bold text-white uppercase ">Contact Info</h2>
+              <ul class="tex-white font-semibold">
+                <li class="mb-4">
+                  <a href="#" class="hover:text-black  text-white">FET Sindh University, Jamshoro</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:text-black text-white">0312-0039230</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-black text-white">ahmed0312@gmail.com</a>
+                </li>
+
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6  font-bold  uppercase text-white">Legal</h2>
+              <ul class="tex-white font-semibold">
+                <li class="mb-4">
+                  <a href="#" class="hover:text-black text-white">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-black text-white">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <p
-          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 mt-4 md:mt-2 mb-2 md:mb-0 text-center dark:text-gray-400 font-serif">
-          Copyright © 2023 merikitab.com hyderabad</p>
-        <div class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start" style="align-items:center "><a
-            href="#" aria-label="facebook" target="_blank" rel="noreferrer"
-            class="text-purple-700 dark:text-purple-500"><svg fill="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg></a><a href="#" aria-label="twitter" target="_blank" rel="noreferrer"
-            class="ml-3 text-purple-700 dark:text-purple-500"><svg fill="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-              </path>
-            </svg></a><a href="#" aria-label="instagram" target="_blank" rel="noreferrer"
-            class="ml-3 text-purple-700 dark:text-purple-500"><svg fill="none" stroke="currentColor"
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg></a>
-          <path
-            d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
-          </path>
-          </svg></a>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/"
+              class="hover:text-black">MERIKITAB</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 8 19">
+                <path fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 21 16">
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 17">
+                <path fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+
     {% block footer %}{% endblock footer %}
   </div>
 

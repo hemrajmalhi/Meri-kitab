@@ -33,12 +33,12 @@ def userlog(request):
                 if user is not None:
                     login(request, user)
                     messages.add_message(request, messages.SUCCESS, "You've successfully logged in")
-                    return redirect('')
+                    return redirect('/')
         else:
             form = LogInForm()
         return render(request, 'auth/login.html', {'form': form, 'login': 'active'})
     else:
-        return HttpResponseRedirect('')
+        return HttpResponseRedirect('/')
 
 
 def log_out(request):
