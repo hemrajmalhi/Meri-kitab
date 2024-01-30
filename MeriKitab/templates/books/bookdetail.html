@@ -2,27 +2,49 @@
 {% block title %}MeriKitab - Buy Books {% endblock title %}
 {% load static %}
 {% block body %}
-
-<div class="flex p-4 space-x-4">
-    <div class="w-1/4">
-      <img src="/media/{{bookDetail.image1}}" alt="Book Image" class="max-w-full h-auto">
-    </div>
-    <div class="w-3/4  m-4">
-      <h2 class="text-2xl font-bold uppercase" style=" padding: 4px 4px; background-color: #92d492; width: 60%;"><b>BookTite :</b> {{bookDetail.title}}</h2>
-      <p style="width: 60%; text-align: justify;"><b>Description: </b> {{bookDetail.desc}}</p>
-      <p ><b>Author: </b> {{bookDetail.authorName}}</p>
-      <!-- <p class="text-gray-600"><b> category</b> {{category_name.category}}</p> -->
-      <p ><b>Price: </b> {{bookDetail.setprice}}</p>
-
-      <h1 class="mt-5 uppercase" style="font-weight: 600;  font-weight: 900; width: 60%; font-size: 28px;padding: 4px 4px; background-color: #92d492;" > About Seller</h1>
-      <p><b>Seller Name: </b> {{bookDetail.name}}</p>
-      <!-- <p class="text-gray-600">Email: {{bookDetail.}}</p> -->
-      <p> <b>Contact No: </b> {{bookDetail.phone}}</p>
-      <p><b>Address: </b> {{bookDetail.address}}</p>
-    </div>
+<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div class="flex p-4 space-x-4 bg-gray-100 rounded-lg shadow-md">
+  <div class="w-1/4">
+      <img src="/media/{{bookDetail.image1}}" alt="Book Image" class="max-w-full h-auto rounded-lg">
   </div>
-  
+  <div class="w-3/4 m-4">
+      <h2 class="text-3xl font-bold text-green-600 mb-2"><b>{{bookDetail.title}}</b></h2>
+      <p class="text-gray-700 mb-4"><b>Description: </b>{{bookDetail.desc}}</p>
+      <p class="text-gray-800"><b>Author: </b>{{bookDetail.authorName}}</p>
+      <p class="text-gray-800"><b>Price: </b>{{bookDetail.setprice}}</p>
+      <div class="mt-6">
+        <h1 class="text-2xl font-semibold  text-green-600 mb-4">About Seller</h1>
+        <div class="flex items-center mb-2">
+            <div class="w-8 h-8 mr-2">
+              <i class="fa-solid fa-user fa-2xl " style="color: #08bf57;"></i>
+            </div>
+            <p class="text-gray-800"><b>Seller Name: </b>{{bookDetail.name}}</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <div class="w-8 h-8 mr-2">
+              <i class="fa-brands fa-whatsapp  fa-2xl" style="color: #059456;"></i>
+            </div>
+            <p class="text-gray-800"><b>Contact No: </b>
+                <a href="https://wa.me/+92{{bookDetail.phone}}?text''" target="_blank">
+                    <span class="underline" style=" text-decoration: none; " >Chat me<i class="fa-regular fa-comment fa-beat fa-2xl" style="color: #058f0e; margin-left: 7px;"></i></span>
+                </a>
+            </p>
+        </div>
+        <div class="flex items-center">
+            <div class="w-8 h-8 mr-2">
+              <i class="fa-solid fa-location-dot fa-2xl" style="color: #0ec46f;"></i>
+            </div>
+            <p class="text-gray-800"><b>Address: </b>{{bookDetail.address}}</p>
+        </div>
+    </div>
+    
+  </div>
+</div>
 
+  
 
 
 {% endblock body %}

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import SellBook1
+from .models import SellBook1, Contact
 from .forms import SellBookForm
 from django.shortcuts import render, redirect
 from django.contrib import messages
@@ -17,10 +17,19 @@ def home(request):
 
 
 def about(request):
+
     return render(request, "merikitab/about.html")
 
 
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        desc = request.POST['desc']
+        contact = Contact(name=name, email=email, phone=phone, desc=desc)
+        contact.save()
+        messages.success(request, 'Your record has been saved successfully. We will Contact you soon')
     return render(request, "merikitab/contact.html")
 
 
